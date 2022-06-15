@@ -1,11 +1,12 @@
 # GamingTeam-HP
 ゲーミングチーム「novelty」のサイト制作をしました．
+###
 Noveltyとはスポンサー付きの非プロゲーミングチームです．
 スプラトゥーンをメインに活動し，youtubeやtiktokなどで配信をしています．
-## 
+###
 一部ピックアップして紹介します．
 
-## topページ
+## topページ 
 <img width="205" alt="novelty_top" src="https://user-images.githubusercontent.com/104476684/173810344-9c5845dd-9259-444c-a25d-a823c3fd505c.png">
 
 ## topix
