@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@supu1229" />
+    <meta name="twitter:title" content="Novelty_HP" />
+    <meta name="twitter:description" content="cfamiドラフト杯,スプラトゥーン3" />
+    <meta name="twitter:image" content="http://novelty-sp3.com/images/tr1.jpg" />
+    <title>Novelty</title>
+    <link rel="stylesheet" herf="css/reset.css">
+    <link rel="stylesheet" herf="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher" >
+    <link rel="stylesheet" href="style.css">
+    <script  src="script.js" defer></script>
+</head>
+<body>
+    
+    <div id="loading" class="loading active">
+        <div class="loadingText">
+            <div class="home-content wrapper" class="blend">
+                <h1 class="ml3" class="page-title blend__text">Novelty</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--// animetion(Novelty)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        //animation loop-->
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i+1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+
+    
+    <div id="home" class="nvl_home">
+        <div class="nav-left">
+            <img class="nav-logo" src="images/teamlogo.png" alt="ロゴ">
+            <p id="nav-p">ovelty</p>
+        </div>
+        <header class="page-header wrapper">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about12">ABOUT</a></li>
+                    <li><a href="para.html">EVENT</a></li>
+                    <!-- <li><a href="member.html">MEMBERS</a></li> -->
+                    <li><a href="para.html#sns">SNS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="ky">
+        <img class="main-img" src="images/ky-visu.jpg" alt="キービジュ">
+        <p class="Novelty" style="text-align: center;">Novelty</p>
+    </div>
+
+    <hr class="hr-top" width="80%" align="left">
+    <div class="mainflex">
+        <div class="mainpic">
+            <p class="topic_title2">Novelty's Topix</p>
+            <img src="images/tr1.jpg" alt="mainpic">
+        </div>
+    
+        <div class="maintext">
+            <p class="topic_title">Novelty's Topix</p>
+            <h1 class="title">cfamiドラフト杯</h1>
+            <p>スプラ界唯一の1チーム8人制の大会<br class="p_none">「cfamiドラフト」<br>
+                2つのブロックに分かれ,勝利数を競う<br>
+                48人の中から編成及び腕前を考慮し,<br class="p_none">ドラフトをすることがこの大会のカギとなる.<br>
+                開催時には<a style="color: rgb(88, 211, 255);" href="https://twitter.com/Novelty_game?s=20&t=upWdxeXyrfgRjH19wwqlTg">こちら</a>の<br class="p_none">アカウントで情報を発信します．</p>
+                <p>「cfami Draft」 is the 8-player draft competition for one team. The contestants are divided into two blocks and compete for the number of winners. <br class="p_none">Information will be posted on <a style="color: rgb(88, 211, 255);" href="https://twitter.com/Novelty_game?s=20&t=upWdxeXyrfgRjH19wwqlTg">this account</a> when the event is held.</p>
+        </div>
+    </div>
+    <hr class="hr-bottom" width="80%" align="right">
+
+
+    <span id="about12"></span>
+    <article id ="about" class="article1">  
+        <header>
+            <p class="about">A</p>
+            <p class="about">B</p>
+            <p class="about">O</p>
+            <p class="about">U</p>
+            <p class="about">T</p>
+        </header>
+        <div class="flex-contents">
+            <div class="flex-img">
+                <p style="text-align: center;"><img src="images/teamlogo.png" alt="logo"></p>
+            </div>
+
+            <div class="flex-text">
+                <h1>eスポーツ業界を駆け抜ける、"変わり者"だらけのチーム。</h1>
+                    <p>非プロチームとしては初である、スポンサー付きのエンジョイグループが完成したその名も"Novelty"。<br>
+                        文字通り変わり者が多く集まったチームとなっており、日々笑いは絶えることなくたくさんのゲームを遊びまくっている。
+                        なんとも変わった集団だ。
+                    </p>
+                    <p>
+                        ただそんなNovelty、ゲームの実力と団結力だけは侮ってはならない。<br>
+                        非プロとはいえ全員が「ガチゲーマー」である。<br>
+                        日々のゲームで培っている連携力や練習量は、並大抵のプレイヤーを大きく上回る驚愕のレベルだ。
+                    </p>
+                <h2>さあ、君も僕らと一緒に遊ばないか？</h2>
+            </div>
+        </div>
+        <a style="text-align: center;" href="add_form.html">チームに応募する</a>
+    </article>
+
+
+    <article id ="about2" class="article2">  
+
+        <header>
+            <p class="about">A</p>
+            <p class="about">B</p>
+            <p class="about">O</p>
+            <p class="about">U</p>
+            <p class="about">T</p>
+        </header>
+            <div class="flex-text">
+                <h1>eスポーツ業界を駆け抜ける、<br class="p_none">"変わり者"だらけのチーム。</h1>
+                    <p>非プロチームとしては初である、スポンサー付きの<br class="p_none">エンジョイグループが完成したその名も"Novelty"。<br>
+                        日々笑いは絶えることなく<br class="p_none">たくさんのゲームを遊びまくっている。
+                    </p>
+                    <p>
+                        ただそんなNovelty、<br class="p_none">ゲームの実力と団結力だけは侮ってはならない。<br>
+                        非プロとはいえ全員が「ガチゲーマー」である。<br>
+                        日々のゲームで培っている連携力や練習量は、<br class="p_none">並大抵のプレイヤーを大きく上回る驚愕のレベルだ。
+                    </p>
+                <h2>さあ、君も僕らと一緒に遊ばないか？</h2>
+            </div>
+        <a style="text-align: center;" href="add_form.html">チームに応募する</a>
+    </article> 
+
+    <img class="main-img" src="images/nvl_home_tr2.jpg" alt="苗植え">
+
+    <!--slider-->
+</body>
+</html>
