@@ -16,6 +16,32 @@ Noveltyとはスポンサー付きの非プロゲーミングチームです．
 <img width="189" alt="スクリーンショット 2022-06-15 19 52 08" src="https://user-images.githubusercontent.com/104476684/173810525-af3f67b0-cdce-4b72-a8ef-58ab24ca16d0.png">
 
 ## event
+###
+スクロールして画面に表示された時にフワッと画像を表示させる機能を実装しました．
+###
+JavaScript内で，画面の高さを取得しclassを付与．
+###
+    const targetElement = document.querySelectorAll(".animationTarget");
+    console.log("画面の高さ",window.innerHeight)
+    document.addEventListener("scroll",function(){
+      for  (let i = 0; i < targetElement.length; i++){
+        const getElementDistance = targetElement[i].
+        getBoundingClientRect().top + targetElement[i].clientHeight*.6
+        if(window.innerHeight > getElementDistance){
+          targetElement[i].classList.add("show");
+        }
+      }
+    });
+###
+classが与えられるまで対象の画像を非表示．
+###
+    opacity: 0;
+    transition: 1s .5s;
+###
+クラス付与後にトランジションでフワッと表示．
+###
+    transform: translate(-20px,20px);
+
 <img width="193" alt="スクリーンショット 2022-06-15 19 52 26" src="https://user-images.githubusercontent.com/104476684/173810529-0cb1451c-e312-4fcc-b6fb-335c39fa65b7.png">
 
 
