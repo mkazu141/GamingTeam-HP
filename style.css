@@ -1,0 +1,408 @@
+@charset "UTF-8";
+/* 共通部分
+--------------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #432;
+    background-color:rgb(255, 251, 240);
+    font-family: serif;
+    margin: -15px 0;
+}
+
+/*ロード画面
+-------------------------------*/
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /*
+    background-image: url(../1/novelty/loading_img.jpg);
+    background-size: contain;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.loading.active h1{
+    font-size: 60px;
+    margin: auto;
+}
+
+
+.loading.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.after.active{
+    opacity: 1;
+}
+.after{
+    opacity: 0;
+}
+
+
+/*ナビゲーション
+---------------------------------*/
+#home{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(224, 216, 205) ;
+    height: 100px;
+}
+.main-nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    margin-right: 5vw;
+}
+.main-nav li{
+    list-style-type: none;
+    margin-right: 15%;
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-logo{
+    width: auto;
+    height: 50px;
+    margin-left: 12vw;
+    margin-top: 26px;
+}
+.main-nav li a{
+    font-size: 1.5vw 
+}
+.nav-left{
+    display: flex;
+    justify-content: flex-start;
+}
+#nav-p{
+    display: block;
+    margin-top: 36px;
+    padding-left: 6.5px;
+    letter-spacing: 1px;
+    font-size: 2.3vw;
+    color: transparent ;
+    -webkit-text-stroke: 1px #432;
+}
+
+
+/*mainflex
+----------------------------------*/
+.mainflex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.mainpic img{   
+    width: auto;
+    height: 400px;
+}
+.mainpic{
+    margin-left: 15%;
+    margin-bottom: 150px;
+}
+.maintext{
+    width: 50%;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+.title{
+    display: block;
+    font-weight: 100;
+}
+.maintext h3{
+    font-size: 2.5rem;
+}
+.hr-bottom{
+    margin-top: -130px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+}
+.hr-top{
+    margin-top: 50px;
+    margin-bottom: -125px;
+    margin-left: 10%;
+}
+
+
+
+/*ABOUT
+-----------------------------------*/
+/*後で要素を組み込むようの余白*/
+article{
+    background-color: rgb(224, 216, 205);
+    padding-bottom: 10px;
+}
+article header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13rem;
+    display: flex;
+    justify-content: space-around;
+    line-height: 0.0;
+    margin: 0 5%;
+}
+.about{
+    margin-top: 150px;
+}
+.flex-contents{
+    display: flex;
+    justify-content: space-between;
+    margin: -50px 7.5% 40px 7.5%;
+}
+.flex-img{
+    width: 25%;
+    background-color: rgb(255, 251, 240);
+}
+.flex-img img{
+    display: block;
+    margin: 15% auto;
+    width: 60%;
+}
+.flex-text{
+    width: 75%;
+    margin-left: 3%;
+}
+.flex-text h1{
+    margin: 0 auto;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+.flex-text h2{
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+.flex-text p{
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+article a{
+    background-color:rgb(255, 251, 240);
+    border-radius: 40px;
+    padding: 17px 70px;
+    display: block;
+    margin: auto;
+    width: 20%;
+    font-size: 1.5rem;
+    color:rgb(255, 148, 166);
+    font-weight: bold;
+}
+.main-img{
+    width: 100%;
+    height: auto;
+}
+.topic_title{
+    font-size: 4vw;
+    margin: 0 auto;
+    letter-spacing: 8px;
+}
+.ky{
+    display: none;
+}
+.topic_title2{
+    display: none;
+}
+.article2{
+    display: none;
+}
+.p_none{
+    display: none;
+}
+
+/*chara
+---------------------------------------*/
+
+
+/*レスポンシブ*/
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    .p_none{
+        display: block;
+    }
+    .i_none{
+        display: none;
+    }
+
+    /*ロード画面
+    ----------------------------------*/
+    .loading.active h1{
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: -100px;
+    }
+
+    .nvl_home{
+        background-size: 100%; /*画像縮尺調整*/
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    #home img{
+        width: 50px;
+    }
+
+    #home h1{
+        margin-left: 0px;
+    }
+
+    #home{
+        margin-top: 0;
+        background-image: url(../1/novelty/nvl_home_r.jpg);
+    }
+    #home .page-title{
+        text-transform: none;
+    }
+
+    .ky{
+        display: block;
+    }
+    .Novelty{
+        font-size: 14vw;
+        margin-top: -30vh;
+        margin-bottom: 30vh;
+        color: whitesmoke;
+        font-weight: bold;
+        font-family: serif;
+        mix-blend-mode: overlay;
+    
+    }
+
+    /*ナビゲーション
+    --------------------------------*/
+    #nav-p, #nav-2{
+        display: none;
+    }
+
+
+
+
+    .hr-top{
+        margin-top: -50px;
+        margin-bottom: -135px;
+    }
+    .mainpic img{   
+        width: 60vw;
+        height: auto;
+    }
+    .mainpic{
+        margin-left: 20vw;
+        margin-bottom: 0;
+    }
+    .mainflex{
+        flex-direction: column;
+    }
+    .maintext{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .maintext p{
+        text-align: center;
+    }
+    .title{
+        display: block;
+        font-weight: 100;
+    }
+    .maintext h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .topic_title2{
+        display: block;
+        font-size: 5vw;
+        letter-spacing: 4px;
+        margin-left: 5vw;
+        margin-top: -1vw;
+    }
+    .topic_title{
+        display: none;
+    }
+    .hr-bottom{
+        margin-top: -1vw;
+        margin-bottom: 50px;
+        margin-right: 10%;
+    }
+
+
+    /*ABOUT
+    -----------------------------------*/
+    /*後で要素を組み込むようの余白*/ 
+    .article1{
+        display: none;
+    }
+    .article2{
+        display: block;
+    }
+    .about{
+        margin-top: 15vw;
+    }   
+    article header{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 6vw;
+        display: flex;
+        justify-content: center;
+        line-height: 0.0;
+        margin: 0 5% 5% 5%;
+    }
+    .flex-text{
+        text-align: center;
+        width: 75%;
+        margin-left: 10%;
+        font-size: 3vw;
+    }
+    .flex-text h1{
+        margin: 0 auto;
+        font-size: 4.5vw;
+        font-weight: bold;
+        margin-bottom: 6vw;
+    }
+    .flex-text h2{
+        margin-bottom: 6vw;
+        font-size: 4vw;
+    }
+    .flex-text p{
+        margin-bottom: 0.5vw;
+        line-height: 2;
+    }
+    article a{
+        background-color:
+        rgb(255, 251, 240);
+        border-radius: 40px;
+        padding: 17px 70px;
+        display: block;
+        margin: auto;
+        width: 20%;
+        font-size: 2.5vw;
+        color:
+        rgb(255, 148, 166);
+        font-weight: bold;
+    }
+
+
+
+
+
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .main-nav li a {
+        font-size: 3vw;
+    }
+    .main-nav2 li a {
+        font-size: 3vw;
+    }
+
+    
+}
